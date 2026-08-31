@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>
+    Home - Netflix
+  </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header id="nav-container">  
+    <nav class="navbar">
+      <ul>
+        <li><a><img id="netflix-logo" src="media/BrandAssets_Logos_01-Wordmark-removebg-preview.png"></a></li>
+        <li><a href="">Home</a></li>
+        <li><a href="">Shows</a></li>
+        <li><a href="">Movies</a></li>
+        <li><a href="">Games</a></li>
+        <li><a href="">New & Popular</a></li>
+        <li><a href="">My List</a></li>
+        <li><a href="">Browse by Languages</a></li>
+      </ul>
+    </nav>
+    <div id="user-icons">
+      <a href="" class="netflix-icon"><i class="netflix-icon fa-solid fa-magnifying-glass"></i></a>
+      <a href="" class="netflix-icon"><i class="fa-regular fa-bell"></i></a>
+      <img class="netflix-icon" src="media/image-removebg-preview.png">
+      <i class="netflix-icon fa-regular fa-user"></i>
+    </div>
+  </header>
+  <main class="content-wrapper">
+
+    <!-- MAIN BIG VIDEO -->
+  <div id="big-video-container">
+    <div class="penguin-show">
+      <img src="media\The-penguin-text.png">
+      <ol class="penguin-details">
+        <li>drama</li>
+        <li>gritty</li>
+        <li>TV-MA</li>
+        <li>2024</li>
+      </ol>
+      <p></p>
+      <button id="show-play" class="show-play"><a href="#video-player">Play</a></button>
+      <button class="show-play">More Info</button>
+    </div>
+    <video id="big-video">
+      <source src="media\The-Penguin-Trailer.mp4" type="video/mp4">
+      Your browser does not support video.
+    </video>
+  </div>
+  
+  <!-- VIDEO POP UP -->
+  <div id="pop-up">
+      <video tabindex="-1" id="pop-up-video" autoplay>
+        <source id="popup-video-source" src="" type="video/mp4">
+        Your browser does not support video.
+      </video>
+      <img id="play-button" src="media/play-button-arrowhead.png">
+      <p>11 Seasons - 18+</p>
+      <div id="pop-up-container">
+      </div>
+  </div>
+
+  <p class="heading-1">Today's Top Picks for You</p>
+  <!-- First Section -->
+  <section id="section-1" class="carousel">
+    <video data-show-type="WWE" class="video sec1video" poster="media/Thumbnails/video-capture-t0007.80seg-2474.png" muted>
+      <source src="media/wwe-video.mp4">
+    </video>
+    <video data-show-type="Better Call Saul" class="video sec1video" muted>
+      <source src="media\bettercallsaul-video.mp4">
+    </video>
+    <video data-show-type="Breaking Bad" class="video sec1video" muted>
+      <source src="media\breakingbad-video.mp4">
+    </video>
+    <video data-show-type="Better Call Saul" class="video sec1video" poster="media\Thumbnails\video-capture-t0014.99seg-7847.png" muted>
+      <source src="media\bettercallsaul-video2.mp4">
+    </video>
+    <video data-show-type="Mourinho" class="video sec1video" muted>
+      <source src="media\mourinho-video.mp4">
+    </video>
+    <video data-show-type="Better Call Saul" class="video sec1video" hidden muted>
+      <source src="media\bettercallsaul-video.mp4">
+    </video>
+    <video data-show-type="WWE" class="video sec1video" poster="media\Thumbnails\video-capture-t0007.80seg-2474.png" hidden muted>
+      <source src="media\wwe-video.mp4">
+    </video>
+    <video data-show-type="Breaking Bad" class="video sec1video" hidden muted>
+      <source src="media\breakingbad-video.mp4">
+    </video>
+    <video data-show-type="Better Call Saul" class="video sec1video" poster="media\Thumbnails\video-capture-t0014.99seg-7847.png" hidden muted>
+      <source src="media\bettercallsaul-video2.mp4">
+    </video>
+    <video data-show-type="Mourinho" class="video sec1video" hidden muted>
+      <source src="media\mourinho-video.mp4">
+    </video>
+    <video data-show-type="WWE" class="video sec1video" poster="media\Thumbnails\video-capture-t0007.80seg-2474.png" hidden muted>
+      <source src="media\wwe-video.mp4">
+    </video>
+    <video data-show-type="Better Call Saul" class="video sec1video" hidden muted>
+      <source src="media\bettercallsaul-video.mp4">
+    </video>
+    <video data-show-type="Breaking Bad" class="video sec1video" hidden muted>
+      <source src="media\breakingbad-video.mp4">
+    </video>
+    <video data-show-type="Better Call Saul" class="video sec1video" hidden poster="media\Thumbnails\video-capture-t0014.99seg-7847.png" muted>
+      <source src="media\bettercallsaul-video2.mp4">
+    </video>
+    <video data-show-type="Mourinho" class="video sec1video" hidden muted>
+      <source src="media\mourinho-video.mp4">
+    </video>
+  </section>
+
+  <!-- Next button for first carousel. -->
+  <button id="next-card-button1" class="next-button"><img src="media\next-arrow-transparent-background.png" class="button-image"></button>
+
+  <!-- Previous button for first carousel. -->
+   <button id="previous-card-button1" class="previous-button"><img src="media\next-arrow-transparent-background.png" class="previous-button-image"></button>
+
+   <!-- Second Carousel -->
+  <p class="heading-1">Only on Netflix</p>
+  <!-- Second section -->
+  <section id="section-2" class="carousel">
+    <video data-show-type="WWE" class="video sec2video" poster="media\Thumbnails\video-capture-t0007.80seg-2474.png" muted>
+      <source src="media\wwe-video.mp4">
+    </video>
+    <video data-show-type="Better Call Saul" class="video sec2video" muted>
+      <source src="media\bettercallsaul-video.mp4">
+    </video>
+    <video data-show-type="Breaking Bad" class="video sec2video" muted>
+      <source src="media\breakingbad-video.mp4">
+    </video>
+    <video class="video sec2video" data-show-type="Better Call Saul" poster="media\Thumbnails\video-capture-t0014.99seg-7847.png" muted>
+      <source src="media\bettercallsaul-video2.mp4">
+    </video>
+    <video data-show-type="Mourinho" class="video sec2video" muted>
+      <source src="media\mourinho-video.mp4">
+    </video>
+    <video class="video sec2video" data-show-type="Better Call Saul" hidden muted>
+      <source src="media\bettercallsaul-video.mp4">
+    </video>
+    <video id="video1" data-show-type="WWE" class="video sec2video" poster="media\Thumbnails\video-capture-t0007.80seg-2474.png" hidden muted>
+      <source src="media\wwe-video.mp4">
+    </video>
+    <video class="video sec2video" data-show-type="Breaking Bad" hidden muted>
+      <source src="media\breakingbad-video.mp4">
+    </video>
+    <video class="video sec2video" data-show-type="Better Call Saul" poster="media\Thumbnails\video-capture-t0014.99seg-7847.png" hidden muted>
+      <source src="media\bettercallsaul-video2.mp4">
+    </video>
+    <video class="video sec2video" data-show-type="Mourinho" hidden muted>
+      <source src="media\mourinho-video.mp4">
+    </video>
+    <video data-show-type="WWE" class="video sec2video" poster="media\Thumbnails\video-capture-t0007.80seg-2474.png" hidden muted>
+      <source src="media\wwe-video.mp4">
+    </video>
+    <video class="video sec2video" data-show-type="Better Call Saul" hidden muted>
+      <source src="media\bettercallsaul-video.mp4">
+    </video>
+    <video class="video sec2video" data-show-type="Breaking Bad" hidden muted>
+      <source src="media\breakingbad-video.mp4">
+    </video>
+    <video class="video sec2video" data-show-type="Better Call Saul" poster="media\Thumbnails\video-capture-t0014.99seg-7847.png" hidden muted>
+      <source src="media\bettercallsaul-video2.mp4">
+    </video>
+    <video class="video sec2video" data-show-type="mourinho" hidden muted>
+      <source src="media\mourinho-video.mp4">
+    </video>
+  </section>
+
+  <!-- Next button for second carousel. -->
+  <button id="next-card-button2" class="next-button"><img src="media\next-arrow-transparent-background.png" class="button-image"></button>
+
+  <!-- Previous button for second carousel. -->
+   <button id="previous-card-button2" class="previous-button"><img src="media\next-arrow-transparent-background.png" class="previous-button-image"></button>
+
+   <!-- Second carousel -->
+  <p class="heading-1">Boredom Busters</p>
+  <!-- Third section -->
+  <section id="section-3" class="carousel">
+    <video class="video sec3video" data-show-type="Mourinho">
+      <source src="media\mourinho-video.mp4">
+    </video>
+    <video class="video sec3video" data-show-type="Better Call Saul">
+      <source src="media\bettercallsaul-video2.mp4">
+    </video>
+    <video class="video sec3video" data-show-type="Breaking Bad">
+      <source src="media\breakingbad-video.mp4">
+    </video>
+    <video class="video sec3video" data-show-type="WWE">
+      <source src="media\wwe-video.mp4">
+    </video>
+    <video class="video sec3video" data-show-type="Better Call Saul">
+      <source src="media\bettercallsaul-video.mp4">
+    </video>
+    <video class="video sec3video" data-show-type="Mourinho" hidden>
+      <source src="media\mourinho-video.mp4">
+    </video>
+    <video class="video sec3video" data-show-type="Breaking Bad" hidden>
+      <source src="media\breakingbad-video.mp4">
+    </video>
+    <video class="video sec3video" data-show-type="WWE" hidden>
+      <source src="media\wwe-video.mp4">
+    </video>
+    <video class="video sec3video" data-show-type="Better Call Saul" hidden>
+      <source src="media\bettercallsaul-video.mp4">
+    </video>
+    <video class="video sec3video" data-show-type="WWE" hidden>
+      <source src="media\wwe-video.mp4">
+    </video>
+    <video class="video sec3video" data-show-type="Breaking Bad" hidden>
+      <source src="media\breakingbad-video.mp4">
+    </video>
+    <video class="video sec3video" data-show-type="Mourinho" hidden>
+      <source src="media\mourinho-video.mp4">
+    </video>
+    <video class="video sec3video" data-show-type="WWE" hidden>
+      <source src="media\wwe-video.mp4">
+    </video>
+    <video class="video sec3video" data-show-type="Breaking Bad" hidden>
+      <source src="media\breakingbad-video.mp4">
+    </video>
+    <video class="video sec3video" data-show-type="WWE" hidden>
+      <source src="media\wwe-video.mp4">
+    </video>
+  </section>
+
+  <!-- Next button for second carousel -->
+  <button id="next-card-button3" class="next-button"><img src="media\next-arrow-transparent-background.png" class="button-image"></button>
+  <!-- Previous button for second carousel -->
+      <button id="previous-card-button3" class="previous-button"><img src="media\next-arrow-transparent-background.png" class="previous-button-image"></button>
+
+  <div class="footer">
+    <div class="col-0">
+      <i class="fa-brands fa-facebook-f"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-youtube"></i>
+    </div>
+    <div class="col-1">
+      <a href="">Audio Descriptions</a>
+      <a href="">Investor Relations</a>
+      <a href="">Legal Notices</a>
+    </div>
+    <div class="col-2">
+      <a href="">Help Center</a>
+      <a href="">Jobs</a>
+      <a href="">Cookie Preferences</a>
+    </div>
+    <div class="col-3">
+      <a href="">Gift Cards</a>
+      <a href="">Terms of Use</a>
+      <a href="">Corporate Infromation</a>
+    </div>
+    <div class="col-4">
+      <a href="">Media center</a>
+      <a href="">Privacy</a>
+      <a href="">Contact Us</a>
+    </div>
+    <p class="copyrights-text">1997-2026 Netfix, Inc.</p>
+  </div>
+</main>
+  <div id="video-player" hidden>
+    <video class="video-container" controls>
+      <source id="video-container-source">
+    </video>
+    <!-- <button id="close-video-button">CLOSE</button> -->
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
