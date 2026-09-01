@@ -34,5 +34,6 @@ This project was built to practice:
 
 ## Known limitations
 
-- Media files (video clips) are not included in this repository to keep it lightweight — the layout and interaction logic work regardless, but video playback will require your own media files in a `media/` folder matching the paths referenced in `index.html`
 - This is a front-end learning project and is not affiliated with or endorsed by Netflix
+- The carousels' next/previous logic uses hardcoded index bounds (index===10, index<=index+4), so it only works cleanly for exactly 15 items in groups of 5 — it'll break or behave oddly with a different item count
+- No actual routing — nav links (Home, Shows, Movies, etc.) are empty anchors
